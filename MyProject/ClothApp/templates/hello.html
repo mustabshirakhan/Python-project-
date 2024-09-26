@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %}
+     welcome the project
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="text-success">Users List</h1>
+    <ul class ="bg-danger">
+        {% for x in users %}
+        <li><a href="details/{{ x.id }}">{{x.name}} </a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

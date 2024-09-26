@@ -1,0 +1,14 @@
+{% extends "master.html" %}
+
+    {% block title %}
+        Details about {{welcome.name}}
+    {% endblock %}
+    {% block content %}
+        <h1>{{welcome.name}}</h1>
+  
+        <p>Phone:{{welcome.phone}}</p>
+        <p>Member since:{{welcome.joined_date}}</p>
+  
+        <p>Back to <a href="/">Welcome</a></p>
+  
+    {% endblock %}
